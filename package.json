@@ -1,11 +1,14 @@
 {
   "name": "@remyar/react-navigation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Remy ARNAUDIN <remy.arnaudin@wanadoo.fr>",
   "license": "MIT",
   "description": "Navigation Provider for react",
   "homepage": "https://github.com/remyar/react-navigation",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+    "scripts": {
+      "build": "microbundle-crl --no-compress --format modern,cjs"
+    },
   "repository": {
     "type": "git",
     "url": "https://github.com/remyar/react-navigation"
@@ -18,8 +21,14 @@
     "react",
     "provider"
   ],
-  "dependencies": {
+  "peerDependencies": {
+    "@craco/craco": "^7.1.0",
     "react": ">=18.0.0",
-    "react-router-dom" : ">=6.26.2"
+    "react-router-dom" : ">=6.0.0"
+  },
+  "devDependencies": {
+    "microbundle-crl": "^0.13.11",
+    "react": ">=18.0.0",
+    "react-router-dom": ">=6.0.0"
   }
 }
