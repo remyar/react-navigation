@@ -5,7 +5,7 @@ Navigation provider for react
 This library was built with React >=18 and react-router-dom >=6.26.2 in mind. It *might* work on lower versions
 as well, but the lib is developed for and tested on those versions.
 ```
-npm install react-navigation --save
+npm install @remyar/react-navigation --save
 ```
 
 ## Usage
