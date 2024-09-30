@@ -1,13 +1,13 @@
 {
   "name": "@remyar/react-navigation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Remy ARNAUDIN <remy.arnaudin@wanadoo.fr>",
   "license": "MIT",
   "description": "Navigation Provider for react",
   "homepage": "https://github.com/remyar/react-navigation",
   "main": "dist/index.js",
-    "scripts": {
-      "build": "microbundle-crl --no-compress --format modern,cjs"
+  "scripts": {
+      "build": "microbundle --no-compress --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react --globals react/jsx-runtime=jsx"
     },
   "repository": {
     "type": "git",
@@ -22,12 +22,12 @@
     "provider"
   ],
   "peerDependencies": {
-    "microbundle-crl": "^0.13.11",
+    "microbundle": "^0.15.1",
     "react": ">=18.0.0",
-    "react-router-dom" : ">=6.0.0"
+    "react-router-dom": ">=6.0.0"
   },
   "devDependencies": {
-    "microbundle-crl": "^0.13.11",
+    "microbundle": "^0.15.1",
     "react": ">=18.0.0",
     "react-router-dom": ">=6.0.0"
   }

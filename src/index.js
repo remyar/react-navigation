@@ -37,5 +37,4 @@ function NavigationProvider(props) {
     </ReactNavigationContext.Provider >;
 }
 
-export { withNavigation };
-export default NavigationProvider;
+export { NavigationProvider, withNavigation }
