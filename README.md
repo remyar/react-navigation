@@ -23,8 +23,10 @@ import NavigationProvider from 'react-navigation';
             </NavigationProvider>
         </React.Fragment>
     );
+``` 
 
 ### withNavigation
+``` javascript
 import { withNavigation } from 'react-navigation';
 ...
 
@@ -46,3 +48,4 @@ function YourReactComponent(props) {
 }
 
 export default withNavigation(YourReactComponent);
+``` 
