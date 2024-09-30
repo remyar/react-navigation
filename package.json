@@ -1,0 +1,25 @@
+{
+  "name": "react-navigation",
+  "version": "1.0.0",
+  "author": "Remy ARNAUDIN <remy.arnaudin@wanadoo.fr>",
+  "license": "MIT",
+  "description": "Navigation Provider for react",
+  "homepage": "https://github.com/remyar/react-navigation",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remyar/react-navigation"
+  },
+  "bugs": {
+    "url": "https://github.com/remyar/react-navigation/issues"
+  },
+  "keywords": [
+    "navigation",
+    "react",
+    "provider"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-router-dom" : ">=6.26.2"
+  }
+}
