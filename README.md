@@ -13,7 +13,7 @@ The lib exposes the following methods:
 
 ### NavigationProvider
 ```javascript
-import NavigationProvider from '@remyar/react-navigation';
+import { NavigationProvider } from '@remyar/react-navigation';
 ...
 
  root.render(
