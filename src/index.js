@@ -23,7 +23,7 @@ function NavigationProvider(props) {
     }
 
     function _getPath(){
-        return window.history.location.pathname;
+        return window.history?.location?.pathname;
     }
 
     return <ReactNavigationContext.Provider value={{
