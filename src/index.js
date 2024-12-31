@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 const NavigationContext = createContext();
 
+let pathHistory = [];
+
 function NavigationProvider(props) {
 
     const navigate = useNavigate();
@@ -21,7 +23,7 @@ function NavigationProvider(props) {
     function _getPath() {
         return window.history?.location?.pathname || ((pathHistory.length > 0) ? pathHistory.slice(-1) : "/");
     }
-    
+
     return <NavigationContext.Provider value={{
         push: _push.bind(this),
         goBack: _goBack.bind(this),
