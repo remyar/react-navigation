@@ -10,19 +10,17 @@ function NavigationProvider(props) {
     const navigate = useNavigate();
 
     function _push(_link, _state) {
-        pathHistory.push(_link);
+        pathHistory.push({ link : _link , state : _state});
         navigate(_link, _state);
-        window.history.pushState(_state, "state");
     }
 
     function _goBack() {
         pathHistory.pop();
-        navigate(-1);
-        window.history.back();
+        navigate(pathHistory[pathHistory.length - 1]?.link || "/" , pathHistory[pathHistory.length - 1]?.state);
     }
 
     function _getPath() {
-        return window.history?.location?.pathname || ((pathHistory.length > 0) ? pathHistory.slice(-1) : "/");
+        return ((pathHistory[pathHistory.length - 1]?.link > 0) ? pathHistory[pathHistory.length - 1]?.link.slice(-1) : "/");
     }
 
     return <NavigationContext.Provider value={{
