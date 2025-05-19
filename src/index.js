@@ -18,6 +18,7 @@ function NavigationProvider(props) {
     function _goBack() {
         pathHistory.pop();
         navigate(-1);
+        window.history.back();
     }
 
     function _getPath() {

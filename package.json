@@ -1,6 +1,6 @@
 {
   "name": "@remyar/react-navigation",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "author": "Remy ARNAUDIN <remy.arnaudin@wanadoo.fr>",
   "license": "MIT",
   "description": "Navigation Provider for react",
