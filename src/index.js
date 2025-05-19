@@ -12,11 +12,13 @@ function NavigationProvider(props) {
     function _push(_link, _state) {
         pathHistory.push({ link : _link , state : _state});
         navigate(_link, _state);
+        window.history.pushState(_state, "state");
     }
 
     function _goBack() {
         pathHistory.pop();
         navigate(pathHistory[pathHistory.length - 1]?.link || "/" , pathHistory[pathHistory.length - 1]?.state);
+        window.history.back();
     }
 
     function _getPath() {
